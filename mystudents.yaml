@@ -1,0 +1,23 @@
+---
+- mystudents : 
+     - name : anil
+       phone: 446465
+       address: 
+          door no : adadfadf
+          street no : dfadfadf
+          pincode : 12233
+     
+     - name : raj
+       phone: 446465
+       address: 
+            door no : adadfadf
+            street no : dfadfadf
+            pincode : 12233
+
+     - name : Abdul
+       phone : adadfadf
+       address :
+             door no : fadadf
+             street no : adadfadf
+             pincode : 13434      
+  

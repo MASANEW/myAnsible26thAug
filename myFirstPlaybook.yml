@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+   - name: In task one, I install tree
+     apt:
+      name: tree
+      state: present
+
+   - name: In task two, I Install git
+     apt:
+      name: git
+      state: present   
