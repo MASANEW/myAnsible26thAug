@@ -6,3 +6,7 @@
     apt:
       name: apache2
       state: present
+  - name: In task, I want  to start apache2 webserver on ubuntu ansible nodes
+    service:
+      name: apache2
+      state: statted    
