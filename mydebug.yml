@@ -14,8 +14,10 @@
     apt:
      name: git
      state: present
+     when: myresult.stderr==""
 
   - name: I want to install wget
     apt:
      name: wget
-     state: present   
+     state: present
+     when: myresult.stderr !="" 
