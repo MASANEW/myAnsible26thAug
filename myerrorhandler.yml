@@ -11,8 +11,8 @@
   - name: I want to install wget
     apt:
      name: wget
-     sadddte: present
-    ignore_error: yes
+     sate: present
+    ignore_errors: yes
 
   - name: I want to install tree
     apt:
