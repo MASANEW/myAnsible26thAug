@@ -11,9 +11,9 @@
   - name: I want to install wget
     apt:
      name: wget
-     state: present
+     sadddte: present
 
-  - name: I want to install wget
+  - name: I want to install tree
     apt:
      name: tree
      state: present
