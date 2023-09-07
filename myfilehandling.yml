@@ -12,4 +12,9 @@
       src: mystaticfile.yml
       dest: /home/maha/
 
+  - name: copy my dyno file from master to node
+    copy:
+      src: mydynofile.j2
+      dest: /var/www/html/index.html
+
 
