@@ -8,4 +8,14 @@
 
   - name: I want to display my first task result
     debug:
-      msg: "{{myresult}}"  
+      msg: "{{myresult}}"
+
+  - name: I want to install git
+    apt:
+     name: git
+     state: present
+
+  - name: I want to install wget
+    apt:
+     name: wget
+     state: present   
