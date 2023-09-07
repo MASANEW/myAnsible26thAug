@@ -17,4 +17,11 @@
       src: mydynofile.j2
       dest: /var/www/html/index.html
 
+  - name: download internet files into node side
+    get_url:
+      url: https://adp-mirror-vm1-he-fi.apache.org/tomcat/tomcat-10/v10.0.0/bin/apache-tomcat-10.0.0-windows-x64.zip
+      dest: /etc/foo.conf
+      force_basic_auth: yes
+
+
 
