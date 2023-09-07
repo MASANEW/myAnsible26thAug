@@ -12,7 +12,7 @@
     apt:
      name: wget
      sadddte: present
-    ignore-error: yes
+    ignore_error: yes
 
   - name: I want to install tree
     apt:
