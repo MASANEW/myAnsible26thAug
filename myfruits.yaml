@@ -1,3 +1,6 @@
 ---
-- key: values
+- myFruits: 
+      - apple
+      - orange
+      - mango
 #space notation
