@@ -7,6 +7,7 @@
     apt:
      name: apache2
      state: present
+    notify: restartwebserver 
   - name: I want to copy my static file
     copy:
       src: mystaticfile.yml
@@ -16,12 +17,18 @@
     template:
       src: mydynofile.j2
       dest: /var/www/html/index.html
-
+    notify: restartwebserver
+    
   - name: download internet files into node side
     get_url:
       url: https://adp-mirror-vm1-he-fi.apache.org/tomcat/tomcat-10/v10.0.0/bin/apache-tomcat-10.0.0-windows-x64.zip
       dest: /home/maha/apache-tomcat-10.0.0-windows-x64.zip
       force_basic_auth: yes
+  handlers:
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: restart    
 
 
 
