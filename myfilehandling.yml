@@ -18,7 +18,7 @@
       src: mydynofile.j2
       dest: /var/www/html/index.html
     notify: restartwebserver
-    
+
   - name: download internet files into node side
     get_url:
       url: https://adp-mirror-vm1-he-fi.apache.org/tomcat/tomcat-10/v10.0.0/bin/apache-tomcat-10.0.0-windows-x64.zip
@@ -28,7 +28,6 @@
   - name: restartwebserver
     service:
       name: apache2
-      state: restart    
-
+      state: restart
 
 
